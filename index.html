@@ -62,7 +62,7 @@ Button: Get Started
     <header id="header">
       <!-- container -->
       <div
-        class="container py-4 mx-auto lg:px-32 flex items-center justify-between"
+        class="container py-4 mx-auto 2xl:px-32 flex items-center justify-between"
       >
         <!-- Logo -->
         <div class="font-roba text-3xl text-primary select-none">
@@ -73,7 +73,7 @@ Button: Get Started
         </div>
 
         <!-- nav -->
-        <nav>
+        <nav class="hidden md:block">
           <ul class="flex items-center gap-8 text-gray-700 font-medium text-sm">
             <li class="group cursor-pointer">
               <a
@@ -129,9 +129,9 @@ Button: Get Started
       </div>
     </header>
     <!-- Hero Section -->
-    <section id="hero min-h-screen">
+    <section id="hero" class="min-h-screen">
       <div
-        class="container lg:px-32 mx-auto grid md:grid-cols-2 grid-cols-1 gap-y-10 md:gap-x-20 md:gap-y-0"
+        class="container 2xl:px-32 mx-auto py-10 grid md:grid-cols-2 grid-cols-1 gap-y-10 md:gap-x-20 md:gap-y-0"
       >
         <!-- contwxt (deadline, description,cta)-->
 
@@ -173,6 +173,108 @@ Button: Get Started
         <!-- image -->
         <div class="">
           <img src="assets/images/image-Hero.png" alt="task managment image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Features (4 cards)
+
+1️⃣ Simple Task Management
+Create, assign, and track tasks effortlessly.
+
+2️⃣ Team Collaboration
+Work together in real time and stay aligned.
+
+3️⃣ Smart Analytics
+Get insights into progress and productivity.
+
+4️⃣ Secure & Reliable
+Your data is protected and always available. -->
+    <!-- Features -->
+    <section id="features" class="min-h-screen py-10 bg-gray-50">
+      <div class="container py-14 2xl:px-32 mx-auto space-y-28">
+        <h2
+          class="text-4xl text-center md:text-left text-gray-800 font-semibold"
+        >
+          Features
+          <div
+            class="div mx-auto md:mx-0 mt-4 max-w-48 h-[2px] rounded-xl bg-gradient-to-r bg-300% shadow-md shadow-green-100 from-primary via-secondary to-primary animate-gradient-move"
+          ></div>
+        </h2>
+        <!-- Features Grid -->
+        <div
+          class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-14 md:gap-y-8 md:gap-x-8 lg:gap-y-0"
+        >
+          <!-- item 1 -->
+          <div class="space-y-8 px-4">
+            <img
+              src="assets/images/Task Management.png"
+              alt="task Management"
+              class="w-40 h-40 mx-auto md:mx-0"
+            />
+            <div class="space-y-4 text-center md:text-left">
+              <h3 class="text-xl font-semibold text-gray-700">
+                Simple task managment
+              </h3>
+              <!-- description -->
+              <p class="text-gray-500 leading-relxed">
+                Create, assign, and track tasks effortlessly.
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="space-y-8 px-4">
+            <img
+              src="assets/images/Team Collaboration.png"
+              alt="Team Collaboration"
+              class="w-40 h-40 mx-auto md:mx-0"
+            />
+            <div class="space-y-4 text-center md:text-left">
+              <h3 class="text-xl font-semibold text-gray-700">
+                Team Collaboration
+              </h3>
+              <!-- description -->
+              <p class="text-gray-500 leading-relxed">
+                Work together in real time and stay aligned.
+              </p>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="space-y-8 px-4">
+            <img
+              src="assets/images/Smart Analytics.png"
+              alt="task Management"
+              class="w-40 h-40 mx-auto md:mx-0"
+            />
+            <div class="space-y-4 text-center md:text-left">
+              <h3 class="text-xl font-semibold text-gray-700">
+                Smart Analytics
+              </h3>
+              <!-- description -->
+              <p class="text-gray-500 leading-relxed">
+                Get insights into progress and productivity.
+              </p>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="space-y-8 px-4">
+            <img
+              src="assets/images/Secure & Reliable.png"
+              alt="task Management"
+              class="w-40 h-40 mx-auto md:mx-0"
+            />
+            <div class="space-y-4 text-center md:text-left">
+              <h3
+                class="text-xl font-semibold text-gray-700 tracking-tight leading-tight"
+              >
+                Secure & Reliable
+              </h3>
+              <!-- description -->
+              <p class="text-gray-500 leading-relxed">
+                Your data is protected and always available.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
