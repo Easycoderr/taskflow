@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Roba"; /* Choose a descriptive name */
+  src: url("./assets/fonts/Roba-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Optional: controls how the font loads */
+}
