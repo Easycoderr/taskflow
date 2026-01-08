@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.boxicons.com/3.0.7/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>Task Flow</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -43,7 +47,7 @@
     </script>
     <script src="assets/scripts/script.js" defer></script>
   </head>
-  <body class="font-inter relative">
+  <body class="font-inter">
     <!-- 
 Neutral
 Dark text: #1F2937 (gray-800)
@@ -60,7 +64,7 @@ Nav: Features | Pricing | Testimonials | Contact
 Button: Get Started
 -->
     <!-- Header (nav + CTA) -->
-    <header id="header">
+    <header id="header" class="relative">
       <!-- container -->
       <div
         class="container md:px-5 px-2.5 py-4 mx-auto 2xl:px-32 flex items-center justify-between"
@@ -118,13 +122,54 @@ Button: Get Started
             </li>
           </ul>
         </nav>
+        <!-- nav links for modile view -->
+        <nav id="mobile-nav" class="hidden">
+          <ul
+            class="absolute bg-white z-30 top-16 bottom-0 w-full left-0 min-h-screen flex flex-col items-center gap-8 text-gray-700 font-medium text-md"
+          >
+            <li class="group cursor-pointer">
+              <a
+                href="#features"
+                class="transition-all duration-300 group-hover:text-primary inline-block py-1"
+                >Features</a
+              >
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href="#pricing"
+                class="transition-all duration-300 group-hover:text-primary inline-block py-1"
+                >Pricing</a
+              >
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href="#testimonials"
+                class="transition-all duration-300 group-hover:text-primary inline-block py-1"
+                >Testimonials</a
+              >
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href="#contact"
+                class="transition-all duration-300 group-hover:text-primary inline-block py-1"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
         <!-- CTA  -->
         <div>
           <button
             aria-label="get started"
-            class="text-sm font-medium tracking-wider shadow-green-200 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 py-2 px-5 hover:bg-300% rounded-md transition-all duration-300 hover:shadow-green-200 hover:shadow-lg hover:animate-gradient-move"
+            class="text-sm font-medium md:block hidden tracking-wider shadow-green-200 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 py-2 px-5 hover:bg-300% rounded-md transition-all duration-300 hover:shadow-green-200 hover:shadow-lg hover:animate-gradient-move"
           >
             Get Started
+          </button>
+          <button
+            id="menu-btn"
+            class="bg-transparent border-none z-50 relative md:hidden text-2xl"
+          >
+            <i class="bx bxs-menu" style="color: #1e1e1e"></i>
           </button>
         </div>
       </div>
@@ -639,7 +684,7 @@ Button: Get Started
         <!-- Quick links -->
 
         <ul
-          class="flex sm:flex-row flex-col gap-4 md:ml-auto text-gray-500 text-xs text-center"
+          class="flex sm:flex-row flex-col gap-4 sm:mx-auto md:mx-0 md:ml-auto text-gray-500 text-xs text-center"
         >
           <li>
             <a
