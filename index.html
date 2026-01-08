@@ -316,29 +316,6 @@ Button: Get Started
       </div>
     </section>
     <!-- Pricing  -->
-    <!-- 
-    🔹 Pricing
-
-Starter — Free
-
-Up to 5 projects
-
-Basic features
-
-Pro — $12 / month ⭐ (highlight this)
-
-Unlimited projects
-
-Team collaboration
-
-Analytics
-
-Team — $29 / month
-
-Everything in Pro
-
-Advanced permissions
-     -->
     <section id="pricing" class="min-h-screen bg-gray-50">
       <div class="container mx-auto py-14 space-y-28 2xl:px-32">
         <h2
@@ -355,7 +332,7 @@ Advanced permissions
         >
           <!-- pricing Card 1 free plan -->
           <div
-            class="p-10 flex flex-col gap-5 shadow-md rounded-lg hover:shadow-sm hover:shadow-green-300 transition-all duration-200"
+            class="p-10 w-full flex flex-col gap-5 shadow-md rounded-lg hover:shadow-sm hover:shadow-green-300 transition-all duration-200"
           >
             <!-- header -->
             <div class="space-y-1 mb-2.5">
@@ -419,14 +396,14 @@ Advanced permissions
             <button
               title="click to subscribe plan"
               aria-label="subscribe now"
-              class="py-3 px-12 tracking-wider text-sm mx-auto mt-auto font-medium shadow-green-100 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg hover:animate-gradient-move"
+              class="py-3 px-8 tracking-wider text-sm mx-auto mt-auto font-medium shadow-green-100 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg hover:animate-gradient-move"
             >
               Subscribe Now
             </button>
           </div>
           <!-- pricing Card 2 pro plan -->
           <div
-            class="p-10 flex flex-col gap-5 shadow-md xl:scale-105 xl:-translate-y-2 bg-300% bg-gradient-to-tl from-green-50 via-cyan-50 to-green-50 hover:from-green-100 hover:via-cyan-50 hover:to-green-100 hover:animate-gradient-move rounded-lg border border-primary hover:shadow-sm hover:shadow-green-300 transition-all duration-200"
+            class="p-10 w-full flex flex-col gap-5 shadow-md xl:scale-105 xl:-translate-y-2 bg-300% bg-gradient-to-tl from-green-50 via-cyan-50 to-green-50 hover:from-green-100 hover:via-cyan-50 hover:to-green-100 hover:animate-gradient-move rounded-lg border border-primary hover:shadow-sm hover:shadow-green-300 transition-all duration-200"
           >
             <!-- header -->
             <div class="space-y-1 mb-2.5">
@@ -507,14 +484,14 @@ Advanced permissions
             <button
               title="click to subscribe plan"
               aria-label="subscribe now"
-              class="py-3 px-12 tracking-wider text-sm mx-auto mt-auto font-medium shadow-green-100 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg hover:animate-gradient-move"
+              class="py-3 px-8 tracking-wider text-sm mx-auto mt-auto font-medium shadow-green-100 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg hover:animate-gradient-move"
             >
               Subscribe Now
             </button>
           </div>
           <!-- pricing Card 3 Team -->
           <div
-            class="p-10 flex flex-col gap-5 shadow-md rounded-lg hover:shadow-sm hover:shadow-green-300 transition-all duration-200"
+            class="p-10 flex w-full flex-col gap-5 shadow-md rounded-lg hover:shadow-sm hover:shadow-green-300 transition-all duration-200"
           >
             <!-- header -->
             <div class="space-y-1 mb-2.5">
@@ -610,12 +587,38 @@ Advanced permissions
             <button
               title="click to subscribe plan"
               aria-label="subscribe now"
-              class="py-3 px-12 tracking-wider text-sm mx-auto mt-auto font-medium shadow-green-100 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg hover:animate-gradient-move"
+              class="py-3 px-8 tracking-wider text-sm mx-auto mt-auto font-medium shadow-green-100 shadow-md bg-gradient-to-br from-primary via-secondary to-primary bg-300% text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg hover:animate-gradient-move"
             >
               Subscribe Now
             </button>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="cta">
+      <div class="container mx-auto py-14 2xl:px-32 grid grid-cols-1 gap-14">
+        <h2 class="text-4xl text-center text-gray-800 font-semibold">
+          Ready to simplify your workflow?
+          <div
+            class="div mx-auto mt-4 max-w-md md:max-w-3xl h-[2px] rounded-xl bg-gradient-to-r bg-300% shadow-md shadow-green-100 from-primary via-secondary to-primary animate-gradient-move"
+          ></div>
+        </h2>
+        <!-- Start Free trail Button -->
+        <button
+          title="click to start Free trail"
+          aria-label="Start Free trail"
+          class="group relative py-3 px-12 tracking-wider text-sm mx-auto mt-auto shadow-green-100 shadow-md bg-gradient-to-br from-green-300 via-secondary to-green-300 text-gray-50 rounded-md transition-all duration-300 hover:shadow-green-100 hover:shadow-lg bg-300% animate-gradient-move"
+        >
+          <span
+            class="z-20 font-semibold relative text-transparent bg-clip-text bg-gradient-to-br from-green-500 via-cyan-400 to-green-500 animate-logo-anim bg-300% group-hover:text-gray-50"
+          >
+            Start Free Trail
+          </span>
+          <div
+            class="bg-white absolute top-0.5 bottom-0.5 left-0.5 right-0.5 rounded-md z-10 group-hover:bg-gradient-to-br group-hover:from-green-300 group-hover:via-secondary transition-all duration-300 group-hover:to-green-300 bg-300% group-hover:animate-gradient-move"
+          ></div>
+        </button>
       </div>
     </section>
   </body>
