@@ -3,11 +3,27 @@
 TaskFlow is a modern, responsive SaaS landing page built with **Tailwind CSS**.  
 The project focuses on clean layout design, reusable UI patterns, and smooth user experience across devices.
 
-This is my **4th Tailwind CSS project**, completed in ~2.5 days, with an emphasis on layout, spacing, responsiveness, and component structure.
-
 ---
 
 ## DEMO
+
+### Desktop 💻
+
+#### hero section
+<img width="1902" height="971" alt="image" src="https://github.com/user-attachments/assets/81c2fc50-c6ad-46fc-9f2d-9580d818dd57" />
+
+#### Pricing section
+<img width="1901" height="968" alt="image" src="https://github.com/user-attachments/assets/24905560-d9b5-4b75-a25f-03491c8060a3" />
+
+### Mobile 📱
+
+#### hero section
+<img width="271" height="555" alt="image" src="https://github.com/user-attachments/assets/5a258f4b-545d-4577-b87a-105abbd0b59b" />
+
+
+#### Pricing section
+<img width="269" height="582" alt="image" src="https://github.com/user-attachments/assets/b932f64f-8020-4b2a-9f98-a36726e988b9" />
+
 
 ---
 
@@ -68,3 +84,8 @@ This is my **4th Tailwind CSS project**, completed in ~2.5 days, with an emphasi
 │ │ └── script.js
 ├── index.html
 ├── index.css
+
+## Clone Repo ⬇️
+- git clone https://github.com/Easycoderr/taskflow.git
+
+⭐ If you like this project, feel free to star the repo!
