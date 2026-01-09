@@ -74,3 +74,7 @@ function toggleMenuBtnIcon() {
     menuBtnEl.innerHTML = "<i class='bx  bxs-x' style='color:#1e1e1e'></i>";
   }
 }
+
+// get year auto from browser API for footer
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
