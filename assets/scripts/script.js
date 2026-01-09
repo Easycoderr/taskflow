@@ -3,16 +3,8 @@ const headerEl = document.getElementById("header");
 const menuBtnEl = document.getElementById("menu-btn");
 const mobileNavEl = document.getElementById("mobile-nav");
 
-const Observer = new IntersectionObserver(([entry]) => {
-  if (!entry.isIntersecting) {
-    headerEl.classList.add("sticky", "top-0", "z-50", "bg-white", "border-b");
-  } else {
-    headerEl.classList.remove("sticky", "top-0", "z-50", "bg-white");
-  }
-});
-Observer.observe(heroSectionEl);
-
 // detect scrolling for give header sticky
+
 let lastScrollTop = 0;
 
 window.addEventListener(
@@ -26,12 +18,21 @@ window.addEventListener(
     const st = window.pageYOffset || document.documentElement.scrollTop;
 
     if (st > lastScrollTop) {
+      const Observer = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) {
+          headerClassListToggle("add");
+        } else {
+          headerClassListToggle("remove");
+        }
+      });
+      Observer.observe(heroSectionEl);
       // Scrolling Down
-      headerEl.classList.add("sticky", "top-0", "z-50", "bg-white");
+
       // Example action: Hide a fixed header
     } else if (st < lastScrollTop) {
       // Scrolling Up
-      headerEl.classList.remove("sticky", "top-0", "z-50", "bg-white");
+
+      headerClassListToggle("remove");
       // Example action: Show a fixed header
     }
 
@@ -41,6 +42,19 @@ window.addEventListener(
   },
   false
 );
+
+// Reusble funtion header toggle class list
+function headerClassListToggle(type) {
+  type === "remove"
+    ? headerEl.classList.remove(
+        "sticky",
+        "top-0",
+        "z-50",
+        "bg-white",
+        "border-b"
+      )
+    : headerEl.classList.add("sticky", "top-0", "z-50", "bg-white", "border-b");
+}
 // toggle menu
 menuBtnEl.addEventListener("click", (e) => {
   mobileNavEl.classList.toggle("hidden");
