@@ -1,13 +1,23 @@
 import Button from "./components/Button";
 import Footer from "../../components/Footer";
 import Header from "./components/Header";
+import { useState } from "react";
+import Form from "./Form";
+import LoginForm from "./LoginForm";
+
 function Landing() {
+  const [showForm, setShowForm] = useState(null);
   return (
     <div className="min-h-screen bg-bg dark:bg-bg-dark">
       {/* hero section */}
+      {showForm && (
+        <Form setShowForm={setShowForm} showForm={showForm}>
+          {showForm === "login" ? <LoginForm /> : <SignupForm />}
+        </Form>
+      )}
       <section id="hero" className="relative overflow-hidden min-h-screen">
         {/* header */}
-        <Header />
+        <Header setShowForm={setShowForm} />
         {/* animate shapes */}
         <div className="bg-primary h-48 w-48  md:h-68 md:w-68 rotate-45 absolute opacity-40 rounded-sm top-40 -right-40"></div>
         <div className="bg-secondary h-48 w-48 md:h-68 md:w-68 rotate-45 absolute opacity-40 rounded-sm bottom-40 -left-40"></div>
