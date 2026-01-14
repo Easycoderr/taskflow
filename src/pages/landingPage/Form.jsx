@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { HiX } from "react-icons/hi";
+import UseOutSideClicker from "../../hooks/useOutSideClicker";
 
 function Form({ children, setShowForm, showForm }) {
   const refEl = useRef();
@@ -7,6 +8,7 @@ function Form({ children, setShowForm, showForm }) {
     // console.log(value);
     setShowForm(value);
   }
+  UseOutSideClicker(refEl, handleShowForm, true);
   return (
     <div className="flex min-h-screen w-full items-center justify-center z-90 fixed bg-gray-50/30 backdrop-blur-xs">
       <div
