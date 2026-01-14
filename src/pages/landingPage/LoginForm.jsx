@@ -18,13 +18,13 @@ function LoginForm() {
             type="email"
             required
             placeholder=" "
-            className="peer bg-bg text-sm rounded-sm p-3 outline-none ring-[0.5px] focus:ring-2 focus:ring-primary focus:border-primary shadow-md w-full"
+            className="peer bg-bg text-text  text-sm rounded-sm p-3 outline-none ring-[0.5px] focus:ring-2 focus:ring-primary focus:border-primary shadow-md w-full"
           />
 
           <label
             htmlFor="email"
             className="absolute  rounded-sm transition-all duration-300 ease-in-out pointer-events-none 
-                 top-1/2 -translate-y-1/2 left-2 text-text-muted text-sm
+                 top-1/2 -translate-y-1/2 left-2 text-text-muted dark:text-text-muted-dark text-sm
                  peer-focus:-top-px peer-focus:text-xs peer-focus:text-primary
                  peer-[:not(:placeholder-shown)]:-top-px peer-[:not(:placeholder-shown)]:text-xs peer-focus:p-0.5 peer-[:not(:placeholder-shown)]:p-0.5 peer-focus:bg-bg peer-focus:dark:bg-bg-dark peer-[:not(:placeholder-shown)]:bg-bg peer-[:not(:placeholder-shown)]:dark:bg-bg-dark"
           >
@@ -42,13 +42,13 @@ function LoginForm() {
             type={showPassword ? "text" : "password"}
             required
             placeholder=" "
-            className="peer bg-bg rounded-sm text-sm p-3 outline-none ring-[0.5px] focus:ring-2 focus:ring-primary focus:border-primary shadow-md w-full"
+            className="peer bg-bg rounded-sm text-text text-sm p-3 outline-none ring-[0.5px] focus:ring-2 focus:ring-primary focus:border-primary shadow-md w-full"
           />
           {/* <!-- 2. Label follows the peer input --> */}
           <label
             htmlFor="password"
             className="absolute rounded-sm transition-all duration-300 ease-in-out pointer-events-none 
-                 top-1/2 -translate-y-1/2 left-2 text-text-muted text-sm
+                 top-1/2 -translate-y-1/2 left-2 text-text-muted  dark:text-text-muted-dark text-sm
                  peer-focus:-top-px peer-focus:text-xs peer-focus:text-primary
                  peer-[:not(:placeholder-shown)]:-top-px peer-[:not(:placeholder-shown)]:text-xs peer-focus:p-0.5 peer-[:not(:placeholder-shown)]:p-0.5 peer-focus:bg-bg peer-focus:dark:bg-bg-dark peer-[:not(:placeholder-shown)]:bg-bg peer-[:not(:placeholder-shown)]:dark:bg-bg-dark"
           >

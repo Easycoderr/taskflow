@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { useState } from "react";
 import Form from "./Form";
 import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 
 function Landing() {
   const [showForm, setShowForm] = useState(null);
