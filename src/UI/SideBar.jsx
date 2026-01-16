@@ -1,4 +1,3 @@
-// import Dashboard from "../pages/dashboard/dashboard";
 import Logo from "../components/Logo";
 import { LuLayoutDashboard, LuLogOut } from "react-icons/lu";
 import { SlCalender, SlSettings } from "react-icons/sl";
@@ -6,30 +5,17 @@ import { SiBlueprint } from "react-icons/si";
 import { FaTasks } from "react-icons/fa";
 import { GoSidebarCollapse, GoSidebarExpand } from "react-icons/go";
 import SimpleButtonIcon from "../components/SimpleButtonIcon";
-import { useRef, useState } from "react";
 import UseOutSideClicker from "../hooks/useOutSideClicker";
 
-function Layout() {
-  const [isExpand, setIsExpand] = useState(false);
-  const refEl = useRef();
-  function handleExpanding() {
-    setIsExpand((expand) => !expand);
-  }
+function SideBar({ isExpand, setIsExpand, handleExpanding, refEl }) {
   // Outside click sidebar
   UseOutSideClicker(refEl, () => setIsExpand(false), true);
   return (
-    <div
-      className={`relative grid md:grid-cols-[250px_1fr] ${isExpand ? "grid-cols-[200px_1fr]" : "grid-cols-[70px_1fr]"} overflow-x-visible 
-grid-rows-[70px_1fr] min-h-screen bg-bg dark:bg-bg-dark transition-all duration-300`}
-    >
+    <>
+      {/* if Expand make background blur overlay. */}
       {isExpand && (
         <div className="bg-gray-50/30 dark:bg-gray-600/20 z-10 backdrop-blur-sm min-h-screen w-screen absolute top-0 bottom-0 right-0 left-0"></div>
       )}
-      {/* top bar */}
-
-      <div className="bg-bg dark:bg-bg-dark col-span-3 col-start-2 border-b border-gray-200 dark:border-gray-700"></div>
-
-      {/* side bar */}
       <aside
         aria-expanded={isExpand}
         ref={refEl}
@@ -90,10 +76,7 @@ grid-rows-[70px_1fr] min-h-screen bg-bg dark:bg-bg-dark transition-all duration-
           </ul>
         </div>
       </aside>
-      <div className="bg-bg dark:bg-bg-dark p-9 col-start-2 row-start-2 col-span-3 row-span-3">
-        main content
-      </div>
-    </div>
+    </>
   );
 }
 function SideBarItem({ isExpand, children, label }) {
@@ -111,5 +94,4 @@ function SideBarItem({ isExpand, children, label }) {
     </li>
   );
 }
-
-export default Layout;
+export default SideBar;

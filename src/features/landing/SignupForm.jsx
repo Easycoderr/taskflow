@@ -6,7 +6,7 @@ import {
   HiMiniLockClosed,
   HiOutlineKey,
 } from "react-icons/hi2";
-import Button from "./components/Button";
+import Button from "../../pages/landingPage/components/Button";
 import { useState } from "react";
 
 function SignupForm() {

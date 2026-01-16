@@ -1,5 +1,6 @@
 // import Landing from "./pages/landingPage/Landing";
-import Layout from "./UI/layout";
+import Layout from "./layouts/Layout";
+
 function App() {
   return (
     <div>

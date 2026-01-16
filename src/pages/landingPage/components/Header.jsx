@@ -1,7 +1,8 @@
-import { HiMoon, HiSun, HiUser } from "react-icons/hi2";
+import { HiUser } from "react-icons/hi2";
 import Logo from "../../../components/Logo";
 import { useEffect, useState } from "react";
 import Button from "./Button";
+import DarkModeButton from "../../../components/DarkModeButton";
 function Header({ setShowForm }) {
   const [isDarkMode, setIsDarkMode] = useState(
     JSON.parse(localStorage.getItem("isDarkMode"))
@@ -25,27 +26,10 @@ function Header({ setShowForm }) {
       </div>
       {/* CTA and dark mode btn*/}
       <div className="flex text-gray-50  items-center">
-        <Button
-          type={isDarkMode ? "iconSun" : "iconMoon"}
-          onClick={handleDarkModeToggle}
-          title={
-            isDarkMode
-              ? "click for switch to light mode"
-              : "click for switch to dark mode"
-          }
-        >
-          {isDarkMode ? (
-            <HiSun
-              size={25}
-              className="text-gray-50 hover:text-yellow-300 transition-all duration-300"
-            />
-          ) : (
-            <HiMoon
-              size={25}
-              className="text-gray-800 hover:text-yellow-500 transition-all duration-300"
-            />
-          )}
-        </Button>
+        <DarkModeButton
+          isDarkMode={isDarkMode}
+          handleDarkModeToggle={handleDarkModeToggle}
+        />
 
         <div className="sm:flex hidden text-gray-50 items-center gap-2">
           <Button
