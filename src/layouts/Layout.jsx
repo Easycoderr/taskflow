@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import SideBar from "../UI/SideBar";
 import TopBar from "../UI/TopBar";
-import Dashboard from "../pages/dashboard/dashboard";
+import Dashboard from "../pages/Dashboard";
 
 function Layout() {
   const [isExpand, setIsExpand] = useState(false);
@@ -25,7 +25,7 @@ function Layout() {
         isExpand={isExpand}
         refEl={refEl}
       />
-      <main className="bg-bg dark:bg-bg-dark p-9 col-start-2 row-start-2 col-span-3 row-span-3">
+      <main className="bg-bg dark:bg-bg-dark p-6 col-start-2 row-start-2 col-span-3 row-span-3">
         <Dashboard />
       </main>
     </div>

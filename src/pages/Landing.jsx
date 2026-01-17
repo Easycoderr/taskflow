@@ -1,10 +1,10 @@
-import Button from "./components/Button";
-import Footer from "../../UI/Footer";
-import Header from "./components/Header";
+import Button from "../features/landing/components/Button";
+import Footer from "../UI/Footer";
+import Header from "../features/landing/components/Header";
 import { useState } from "react";
-import Form from "../../features/landing/Form";
-import LoginForm from "../../features/landing/LoginForm";
-import SignupForm from "../../features/landing/SignupForm";
+import Form from "../features/landing/Form";
+import LoginForm from "../features/landing/LoginForm";
+import SignupForm from "../features/landing/SignupForm";
 
 function Landing() {
   const [showForm, setShowForm] = useState(null);
