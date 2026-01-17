@@ -6,7 +6,7 @@ import { LuAlarmClockOff } from "react-icons/lu";
 
 function StatsCards() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
       {/* card 1 */}
       <StatsCardItem record="5" title="Today">
         <IoTodaySharp />
