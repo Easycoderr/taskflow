@@ -4,9 +4,9 @@ function Button({ children, type, onClick, title, type2 }) {
     form: "mb-2.5  text-sm font-medium text-gray-50 tracking-wider shadow-green-300 w-full bg-linear-to-br from-primary via-secondary to-primary bg-300 p-3 rounded-md transition-all duration-300 hover:shadow-sm cursor-pointer hover:animate-gradient",
     cta: "font-medium text-gray-50 tracking-wider shadow-green-400 bg-linear-to-br from-primary via-secondary to-primary bg-300 py-3 px-8 rounded-md transition-all duration-300 hover:shadow-md cursor-pointer hover:animate-gradient",
     primary:
-      "text-sm font-medium  tracking-wider shadow-green-200 bg-linear-to-br from-primary via-secondary to-primary bg-300 py-1 px-3 md:py-2 md:px-6 rounded-md transition-all duration-300 hover:shadow-md cursor-pointer hover:animate-gradient",
+      "text-sm text-white font-medium   tracking-wider shadow-green-200 bg-linear-to-br from-primary via-secondary to-primary bg-300 py-2 px-5 rounded-md transition-all duration-300 hover:shadow-md cursor-pointer hover:animate-gradient",
     secondary:
-      "text-sm font-medium  tracking-wider shadow-green-200  bg-linear-to-br from-secondary via-primary to-secondary bg-300 py-1 px-3 md:py-2 md:px-6 rounded-md transition-all duration-300 hover:shadow-md cursor-pointer hover:shadow-lg hover:animate-gradient",
+      "text-sm text-white font-medium  tracking-wider shadow-green-200  bg-linear-to-br from-secondary via-primary to-secondary bg-300 py-2 px-5 rounded-md transition-all duration-300 hover:shadow-md cursor-pointer hover:shadow-lg hover:animate-gradient",
   };
   return (
     <button

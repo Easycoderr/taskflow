@@ -1,11 +1,11 @@
 import { HiUser } from "react-icons/hi2";
 import Logo from "../../../components/Logo";
 import { useEffect, useState } from "react";
-import Button from "./Button";
+import Button from "../../../components/Button";
 import DarkModeButton from "../../../components/DarkModeButton";
 function Header({ setShowForm }) {
   const [isDarkMode, setIsDarkMode] = useState(
-    JSON.parse(localStorage.getItem("isDarkMode"))
+    JSON.parse(localStorage.getItem("isDarkMode")),
   );
   useEffect(() => {
     localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));

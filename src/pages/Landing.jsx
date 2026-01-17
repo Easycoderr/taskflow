@@ -1,4 +1,4 @@
-import Button from "../features/landing/components/Button";
+import Button from "../components/Button";
 import Footer from "../UI/Footer";
 import Header from "../features/landing/components/Header";
 import { useState } from "react";

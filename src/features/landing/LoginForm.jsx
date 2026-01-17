@@ -1,6 +1,6 @@
 import { HiMail } from "react-icons/hi";
 import { HiLockClosed } from "react-icons/hi2";
-import Button from "./components/Button";
+import Button from "../../components/Button";
 import { useState } from "react";
 function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
